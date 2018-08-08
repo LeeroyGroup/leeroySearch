@@ -254,7 +254,7 @@ export default function initReactivesearch(componentCollection, searchState, set
 			queryLog,
 		};
 
-		appbaseRef.msearch({
+		appbaseRef.search({
 			type: config.type === '*' ? '' : config.type,
 			body: finalQuery,
 		})
